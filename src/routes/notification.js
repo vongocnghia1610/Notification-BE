@@ -3,5 +3,5 @@ const router = express.Router();
 
 
 const notificationController = require("../app/Controllers/NotificationController");
-router.get("/notify", notificationController.notify);
+router.post("/notify", notificationController.notify);
 module.exports = router;
